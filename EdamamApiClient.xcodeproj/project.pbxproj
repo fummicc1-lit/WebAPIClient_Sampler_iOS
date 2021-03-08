@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		D305929125F52D5000474D56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D305928F25F52D5000474D56 /* Main.storyboard */; };
 		D305929325F52D5000474D56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D305929225F52D5000474D56 /* Assets.xcassets */; };
 		D305929625F52D5000474D56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D305929425F52D5000474D56 /* LaunchScreen.storyboard */; };
+		D30592A025F5317A00474D56 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D305929F25F5317A00474D56 /* Alamofire */; };
+		D3FD134125F5D4FD00FD0FDF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FD134025F5D4FD00FD0FDF /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		D305929225F52D5000474D56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D305929525F52D5000474D56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D305929725F52D5000474D56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3FD134025F5D4FD00FD0FDF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30592A025F5317A00474D56 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				D305929225F52D5000474D56 /* Assets.xcassets */,
 				D305929425F52D5000474D56 /* LaunchScreen.storyboard */,
 				D305929725F52D5000474D56 /* Info.plist */,
+				D3FD134025F5D4FD00FD0FDF /* Constants.swift */,
 			);
 			path = EdamamApiClient;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = EdamamApiClient;
+			packageProductDependencies = (
+				D305929F25F5317A00474D56 /* Alamofire */,
+			);
 			productName = EdamamApiClient;
 			productReference = D305928625F52D5000474D56 /* EdamamApiClient.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +118,9 @@
 				Base,
 			);
 			mainGroup = D305927D25F52D5000474D56;
+			packageReferences = (
+				D305929E25F5317A00474D56 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = D305928725F52D5000474D56 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +151,7 @@
 				D305928E25F52D5000474D56 /* ViewController.swift in Sources */,
 				D305928A25F52D5000474D56 /* AppDelegate.swift in Sources */,
 				D305928C25F52D5000474D56 /* SceneDelegate.swift in Sources */,
+				D3FD134125F5D4FD00FD0FDF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D305929E25F5317A00474D56 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D305929F25F5317A00474D56 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D305929E25F5317A00474D56 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D305927E25F52D5000474D56 /* Project object */;
 }
